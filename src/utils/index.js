@@ -3,3 +3,10 @@ export const applyMiddleware = (middleware, router) => {
         f(router);
     }
 };
+
+export const applyRoutes = (routes, router) => {
+    for (const route of routes) {
+        const { method, path, handler} = route;
+        router.use(path, handler);
+    }
+};
