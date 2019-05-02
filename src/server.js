@@ -1,7 +1,7 @@
 import http from "http";
 import express from "express";
-import { applyMiddleware } from "./utils";
 import middleware from "./middleware";
+import { applyMiddleware } from "./utils";
 
 const router = express();
 applyMiddleware(middleware, router);
