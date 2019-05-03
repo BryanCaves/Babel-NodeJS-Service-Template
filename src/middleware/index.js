@@ -2,7 +2,7 @@ import {
     handleCors, 
     handleBodyRequestParsing, 
     handleCompression, 
-    handleMorgan 
+    handleMorgan
 } from './common';
 
 export default [handleCors, handleBodyRequestParsing, handleCompression, handleMorgan];
