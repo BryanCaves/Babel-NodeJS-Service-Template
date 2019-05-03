@@ -1,3 +1,4 @@
-import healthRoutes from './health/routes.js'
+import healthRoutes from './health/routes'
+import pokemonRoutes from './pokemon/routes';
 
-export default [...healthRoutes];
+export default [...healthRoutes, ...pokemonRoutes];
